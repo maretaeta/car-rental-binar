@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binar Car Rental</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tailwind.css" />
+
+    <!-- ICONSCOUT CD -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
+  </head>
+
+  <!--SWIPPER JS-->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+
+  <body class="">
+    <!--- ================================== NAVBAR ========================================= -->
+    <section class="bg-[#F1F3FF]">
+      <nav class="fixed top-0 left-0 w-full bg-[#F1F3FF]">
+        <div
+          class="container m-auto flex justify-between items-center mt-5 w-full"
+        >
+          <a href="index.html">
+            <h4 class="px-4 text-xl font-bold">Binar Car Rental</h4>
+          </a>
+          <ul
+            class="hidden md:flex items-center text-base cursor-pointer font-semibold"
+          >
+            <li class="hover:text-blue-600 py-4 px-6">
+              <a href="#"> Our Service </a>
+            </li>
+            <li class="hover:text-blue-600 py-4 px-6">
+              <a href="#"> Why Us </a>
+            </li>
+            <li class="hover:text-blue-600 py-4 px-6">
+              <a href="#"> Testimonial </a>
+            </li>
+            <li class="hover:text-blue-600 py-4 px-6">
+              <a href="#"> Contact </a>
+            </li>
+            <a
+              href="#"
+              class="bg-[#5CB85F] font-semibold text-white py-2 px-3 hover:shadow-lg hover:opacity-80"
+              >Registrasi</a
+            >
+          </ul>
+
+          <button
+            class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none group"
+          >
+            <i class="uil uil-bars"></i>
+            <div class="w-5 h-1 mb-1"></div>
+            <div class="w-5 h-1 mb-1"></div>
+            <div class="w-5 h-1"></div>
+            <div
+              class="absolute top-0 opacity-0 h-screen w-6/12 bg-white border transform group-focus:right-0 group-focus:opacity-100 transition-all duration-300"
+            >
+              <ul
+                class="flex flex-col items-center w-full text-base cursor-pointer pt-10"
+              >
+                <li class="hover:text-blue-600 py-4 px-6 w-full">
+                  <a href="#"> Our Service </a>
+                </li>
+                <li class="hover:text-blue-600 py-4 px-6 w-full">
+                  <a href="#"> Why Us </a>
+                </li>
+                <li class="hover:text-blue-600 py-4 px-6 w-full">
+                  <a href="#"> Testimonial </a>
+                </li>
+                <li class="hover:text-blue-600 py-4 px-6 w-full">
+                  <a href="#"> Contact </a>
+                </li>
+                <a
+                  href="#"
+                  class="bg-[#5CB85F] font-semibold text-white py-2 px-2 hover:shadow-lg hover:opacity-80"
+                  >Registrasi</a
+                >
+              </ul>
+            </div>
+          </button>
+        </div>
+      </nav>
+
+      <!--- ================================== HEADER ========================================= -->
+      <!--flex (pembungkus elemen dalam section) : mudah mengatur posisi didlmnya (flex-wrap : tidak harus sejajar dengan satu baris)-->
+      <!--- id : digunakan agar terpanggil jika diarahkan ke navigasi-->
+      <section id="" class="pt-20 md:pl-20 gap-32 md:grid grid-cols-2 mx-auto">
+        <div class="px-4">
+          <div class="m-auto w-full md:pl-4">
+            <!--text base : ukuran normal-->
+            <h1 class="text-3xl font-bold pt-10 flex">
+              Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
+            </h1>
+            <div>
+              <p class="font-medium mb-10 mt-4 leading-relaxed">
+                Selamat datang di Binar Car Rental. Kami menyediakan mobil
+                kualitas terbaik dengan harga terjangkau. Selalu siap melayani
+                kebutuhanmu untuk sewa mobil selama 24 jam.
+              </p>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="bg-[#5CB85F] font-semibold text-white py-4 px-3 hover:shadow-lg hover:opacity-80"
+                >Mulai Sewa Mobil</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="w-full mt-10">
+          <img src="images/header.png" />
+        </div>
+      </section>
+    </section>
+
+    <!--- ================================== CEKLIS ========================================= -->
+    <section class="pt-12">
+      <div
+        class="container max-w-6xl mx-auto grid md:grid-cols-2 w-full justify-items-center"
+      >
+        <div class="mt-10">
+          <img src="images/girl.png" />
+        </div>
+        <div class="w-full px-4 m-auto text-justify">
+          <!--text base : ukuran normal-->
+          <h1 class="text-3xl font-bold pt-4">
+            Best Car Rental for any kind
+            <span class="block mt-1"> of trip in (Lokasimu)! </span>
+          </h1>
+          <p class="mb-5 mt-4 leading-relaxed">
+            Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga
+            lebih murah dibandingkan yang lain, kondisi mobil baru, serta
+            kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding,
+            meeting, dll.
+          </p>
+          <div class="">
+            <p class="flex gap-4 py-1">
+              <img src="./images/ceklist.png" />
+              Sewa Mobil Dengan Supir di Bali 12 Jam
+            </p>
+            <p class="flex gap-4 py-1">
+              <img src="./images/ceklist.png" />
+              Sewa Mobil Lepas Kunci di Bali 24 Jam
+            </p>
+            <p class="flex gap-4 py-1">
+              <img src="./images/ceklist.png" />
+              Sewa Mobil Jangka Panjang Bulanan
+            </p>
+            <p class="flex gap-4 py-1">
+              <img src="./images/ceklist.png" />
+              Gratis Antar - Jemput Mobil di Bandara
+            </p>
+            <p class="flex gap-4 py-1">
+              <img src="./images/ceklist.png" />
+              Layanan Airport Transfer / Drop In Out
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--- ================================== WHY US ========================================= -->
+    <section class="py-16 ">
+      <h1 class="font-bold text-2xl pb-2 text-center">Why Us ?</h1>
+      <p class="text-center pb-8">Mengapa harus pilih Binar Car Rental?</p>
+      <div
+        class="w-full max-w-6xl mx-auto justify-center md:grid-cols-4 grid gap-3"
+      >
+        <div
+          class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        >
+          <img src="./images/oke.png" />
+          <h1 class="font-bold pb-2 pt-2">Mobil Lengkap</h1>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+            Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan
+            terawat
+          </p>
+        </div>
+        <div
+          class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        >
+          <img src="./images/price.png" />
+          <h1 class="font-bold pb-2 pt-2">Harga Murah</h1>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+            Harga murah dan bersaing, bisa bandingkan harga kami dengan rental
+            mobil lain
+          </p>
+        </div>
+        <div
+          class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        >
+          <img src="./images/jam.png" />
+          <h1 class="font-bold pb-2 pt-2">Layanan 24 Jam</h1>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+            Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga
+            tersedia di akhir minggu
+          </p>
+        </div>
+        <div
+          class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        >
+          <img src="./images/award.png" />
+          <h1 class="font-bold pb-2 pt-2">Sopir Profesional</h1>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+            Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat
+            waktu
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--- ================================== TESTIMONIALS ========================================= -->
+    <section>
+    <div class="max-w-2xl mx-auto">
+      <div id="default-carousel" class="relative" data-carousel="static">
+        <div
+          class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96"
+        >
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="mb-6 flex justify-center">
+              <img src="./images/photo1.png">
+            </div>
+            <div class="mb-6 flex justify-center">
+              <img src="./images/star.png" />
+            </div>
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+              debitis dolore fugit voluptatibus iusto aspernatur veniam esse odit
+              ea aperiam iure eligendi reiciendis accusantium sit illum officia
+              pariatur vel beatae.
+            </p>
+            <p class="font-semibold">John Dee 32, Bromo</p>
+          </div>
+
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <div class="mb-6 flex justify-center">
+                <img src="./images/photo1.png">
+              </div>
+              <div class="mb-6 flex justify-center">
+                <img src="./images/star.png" />
+              </div>
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                debitis dolore fugit voluptatibus iusto aspernatur veniam esse odit
+                ea aperiam iure eligendi reiciendis accusantium sit illum officia
+                pariatur vel beatae.
+              </p>
+              <p class="font-semibold">John Dee 32, Bromo</p>
+            </div>
+            
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <div class="mb-6 flex justify-center">
+                <img src="./images/photo2.png">
+              </div>
+              <div class="mb-6 flex justify-center">
+                <img src="./images/star.png" />
+              </div>
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                debitis dolore fugit voluptatibus iusto aspernatur veniam esse odit
+                ea aperiam iure eligendi reiciendis accusantium sit illum officia
+                pariatur vel beatae.
+              </p>
+              <p class="font-semibold">John Dee 32, Bromo</p>
+            </div>
+        </div>
+
+        <div
+          class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2"
+        >
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+        </div>
+
+        <button
+          type="button"
+          class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 group-focus:ring-4 group-focus:ring-white group-focus:outline-none"
+          >
+            <svg
+              class="w-5 h-5 text-white sm:w-6 sm:h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+            <span class="hidden">Anterior</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white group-focus:outline-none"
+          >
+            <svg
+              class="w-5 h-5 text-white sm:w-6 sm:h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+            <span class="hidden">Siguiente</span>
+          </span>
+        </button>
+      </div>
+      <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+    </div>
+
+    <!--- ================================== SEWA ========================================= -->
+    <!-- component -->
+    <!-- This is an example component -->
+    <section class="p-12">
+      <div
+        class="container grid mx-auto justify-center text-center bg-blue-800 py-6 rounded-lg"
+      >
+        <h1 class="font-bold text-2xl text-white px-20 pt-8">
+          Sewa Mobil di (Lokasimu) Sekarang
+        </h1>
+        <p class="text-white px-14 pt-10">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+          cupiditate recusandae provident blanditiis, consequatur nisi optio
+          expedita molestiae perspiciatis dolore non quam error saepe
+          reprehenderit doloribus itaque sapiente cum omnis.
+        </p>
+        <div class="py-10">
+          <button
+            class="py-3 bg-green-400 rounded-sm px-5 font-bold text-white"
+          >
+            Mulai Sewa Mobil
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--- ================================== FAQ [accordions] ========================================= -->
+    <section class="p-7">
+      <div
+        class="container max-w-7xl mx-auto grid md:grid-cols-2 w-full justify-items-center"
+      >
+        <div class="pt-20 items-center">
+          <p class="font-bold text-2xl pl-5">Frequently Asked Question</p>
+          <p class="pt-3 pb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+          </p>
+        </div>
+
+        <!------------- FAQ 1---------------------->
+        <div class="mx-auto flex justify-center items-center">
+          <div>
+            <div
+              class="relative w[-400] border shadow-[6px_6px_10px_-1px_rgba(0, 0, p, 0.15), -6px,_-6px_10px_-1px_rgba(255, 255,0.8)] rounded m-[15px]"
+            >
+              <!-- Input Checkbox -->
+              <input
+                type="checkbox"
+                id="input1"
+                class="absolute peer opacity-0"
+              />
+              <!--Heading-->
+              <label for="input1" class="text-sm mx-7 h-14 flex items-center"
+                >Apa saja syarat yang dibutuhkan?</label
+              >
+              <!--Arrow-->
+              <div
+                class="absolute top-4 right-4 rotate-0 peer-checked:rotate-180 duration-200 scale-125"
+              >
+                <i class="uil uil-angle-down"></i>
+              </div>
+              <!--content-->
+              <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                <p class="p-4 pl-7 text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                  nihil doloribus voluptate ea molestiae! Non quod, similique
+                  omnis maiores blanditiis voluptatem pariatur eaque aut quia
+                  praesentium accusantium, iusto, asperiores at.
+                </p>
+              </div>
+            </div>
+
+            <!---------------- FAQ 2  ---------------------->
+            <div
+              class="relative w[-400] border shadow-[6px_6px_10px_-1px_rgba(0, 0, p, 0.15), -6px,_-6px_10px_-1px_rgba(255, 255,0.8)] rounded m-[15px]"
+            >
+              <!-- Input Checkbox -->
+              <input
+                type="checkbox"
+                id="input2"
+                class="absolute peer opacity-0"
+              />
+              <!--Heading-->
+              <label for="input2" class="text-sm mx-7 h-14 flex items-center"
+                >Berapa hari minimal sewa mobil lepas kunci?</label
+              >
+              <!--Arrow-->
+              <div
+                class="absolute top-4 right-4 rotate-0 peer-checked:rotate-180 duration-200 scale-125"
+              >
+                <i class="uil uil-angle-down"></i>
+              </div>
+              <!--content-->
+              <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                <p class="p-4 pl-7 text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                  nihil doloribus voluptate ea molestiae! Non quod, similique
+                  omnis maiores blanditiis voluptatem pariatur eaque aut quia
+                  praesentium accusantium, iusto, asperiores at.
+                </p>
+              </div>
+            </div>
+
+            <!------------- FAQ 3---------------------->
+            <div
+              class="relative w[-400] border shadow-[6px_6px_10px_-1px_rgba(0, 0, p, 0.15), -6px,_-6px_10px_-1px_rgba(255, 255,0.8)] rounded m-[15px]"
+            >
+              <!-- Input Checkbox -->
+              <input
+                type="checkbox"
+                id="input3"
+                class="absolute peer opacity-0"
+              />
+              <!--Heading-->
+              <label for="input3" class="text-sm mx-7 h-14 flex items-center"
+                >Berapa hari sebelumnya sabaiknya booking sewa mobil?</label
+              >
+              <!--Arrow-->
+              <div
+                class="absolute top-4 right-4 rotate-0 peer-checked:rotate-180 duration-200 scale-125"
+              >
+                <i class="uil uil-angle-down"></i>
+              </div>
+              <!--content-->
+              <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                <p class="p-4 pl-7 text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                  nihil doloribus voluptate ea molestiae! Non quod, similique
+                  omnis maiores blanditiis voluptatem pariatur eaque aut quia
+                  praesentium accusantium, iusto, asperiores at.
+                </p>
+              </div>
+            </div>
+
+            <!------------- FAQ 4---------------------->
+            <div
+              class="relative w[-400] border shadow-[6px_6px_10px_-1px_rgba(0, 0, p, 0.15), -6px,_-6px_10px_-1px_rgba(255, 255,0.8)] rounded m-[15px]"
+            >
+              <!-- Input Checkbox -->
+              <input
+                type="checkbox"
+                id="input4"
+                class="absolute peer opacity-0"
+              />
+              <!--Heading-->
+              <label for="input4" class="text-sm mx-7 h-14 flex items-center"
+                >Apakah Ada biaya antar-jemput?</label
+              >
+              <!--Arrow-->
+              <div
+                class="absolute top-4 right-4 rotate-0 peer-checked:rotate-180 duration-200 scale-125"
+              >
+                <i class="uil uil-angle-down"></i>
+              </div>
+              <!--content-->
+              <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                <p class="p-4 pl-7 text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                  nihil doloribus voluptate ea molestiae! Non quod, similique
+                  omnis maiores blanditiis voluptatem pariatur eaque aut quia
+                  praesentium accusantium, iusto, asperiores at.
+                </p>
+              </div>
+            </div>
+
+            <!------------- FAQ 5---------------------->
+            <div
+              class="relative w[-400] border shadow-[6px_6px_10px_-1px_rgba(0, 0, p, 0.15), -6px,_-6px_10px_-1px_rgba(255, 255,0.8)] rounded m-[15px]"
+            >
+              <!-- Input Checkbox -->
+              <input
+                type="checkbox"
+                id="input5"
+                class="absolute peer opacity-0"
+              />
+              <!--Heading-->
+              <label for="input5" class="text-sm mx-7 h-14 flex items-center"
+                >Bagaimana jika terjadi kecelakaan</label
+              >
+              <!--Arrow-->
+              <div
+                class="absolute top-4 right-4 rotate-0 peer-checked:rotate-180 duration-200 scale-125"
+              >
+                <i class="uil uil-angle-down"></i>
+              </div>
+              <!--content-->
+              <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                <p class="p-4 pl-7 text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                  nihil doloribus voluptate ea molestiae! Non quod, similique
+                  omnis maiores blanditiis voluptatem pariatur eaque aut quia
+                  praesentium accusantium, iusto, asperiores at.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--- ================================== FOOTER ========================================= -->
+    <footer class="mt-10 mb-7">
+      <div
+        class="pl-8 md:pl-16 w-full max-w-7xl mx-auto md:grid-cols-4 grid gap-3 text-base"
+      >
+        <div class="">
+          <p class="pt-2">
+            Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000
+          </p>
+          <p class="pt-2">binarcarrental@gmail.com</p>
+          <p class="pt-2">081-233-334-808</p>
+        </div>
+
+        <div class="block mx-auto w-full font-semibold md:pl-16">
+          <ul class="">
+            <li class="pt-2"><a href="#"> Our Service </a></li>
+            <li class="pt-2"><a href="#"> Why Us</a></li>
+            <li class="pt-2"><a href="#"> Testimonials </a></li>
+            <li class="pt-2"><a href="#"> FAQ </a></li>
+          </ul>
+        </div>
+
+        <div class="">
+          <h4>Connect with us</h4>
+          <div class="flex row-span-4 gap-3 pt-4">
+            <a href="#"><img src="./images/facebook.png" /> </a>
+            <a href="#"><img src="./images/instagram.png" /> </a>
+            <a href="#"><img src="./images/twitter.png" /> </a>
+            <a href="#"><img src="./images/twitch.png" /></a>
+          </div>
+        </div>
+        <div class="pt-2">
+          <p>Copyright Binar 2022</p>
+        </div>
+        <div class="pt-4">
+          <h4 class="text-xl font-bold">Binar Car Rental</h4>
+        </div>
+      </div>
+    </footer>
+    <!--accordion-->
+    <section></section>
+  </body>
+</html>
