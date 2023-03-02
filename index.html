@@ -24,7 +24,7 @@
   <body class="">
     <!--- ================================== NAVBAR ========================================= -->
     <section class="bg-[#F1F3FF]">
-      <nav class="fixed top-0 left-0 w-full bg-[#F1F3FF]">
+      <nav class="fixed top-0 left-0 w-full bg-[#F1F3FF] z-10">
         <div
           class="container m-auto flex justify-between items-center mt-5 w-full"
         >
@@ -168,7 +168,7 @@
     </section>
 
     <!--- ================================== WHY US ========================================= -->
-    <section class="py-16 ">
+    <section class="py-16">
       <h1 class="font-bold text-2xl pb-2 text-center">Why Us ?</h1>
       <p class="text-center pb-8">Mengapa harus pilih Binar Car Rental?</p>
       <div
@@ -218,166 +218,168 @@
     </section>
 
     <!--- ================================== TESTIMONIALS ========================================= -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+
     <section>
-    <div class="max-w-2xl mx-auto">
-      <div id="default-carousel" class="relative" data-carousel="static">
-        <div
-          class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96"
-        >
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <div class="mb-6 flex justify-center">
-              <img src="./images/photo1.png">
+      <div>
+        <div class="mx-auto text-center">
+          <h2 class="mb-4 text-3xl font-bold">Testimonial</h2>
+          <p class="mb-4 pb-2 md:mb-12 md:pb-0">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+
+          <div class="mx-6 mt-8 lg:col-span-2 lg:mx-0">
+            <div class="swiper-container !overflow-hidden">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <blockquote
+                    class="flex h-full flex-col justify-center bg-[#F1F3FF] p-12"
+                  >
+                    <div class="grid ld:grid-cols-2 items-center">
+                      <div class="text-white">
+                        <img src="./images/photo2.png" />
+                      </div>
+                      <div class="mt-4">
+                        <img src="./images/star.png" />
+                        <p class="mt-4 text-lg text-gray-600">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ipsam cumque recusandae dolorum porro, quasi
+                          sunt necessitatibus dolorem ab laudantium vel.
+                        </p>
+                      </div>
+                    </div>
+                    <footer class="mt-8 text-gray-500">
+                      John Dee 32, Bromo
+                    </footer>
+                  </blockquote>
+                </div>
+
+                <div class="swiper-slide">
+                  <blockquote
+                    class="flex h-full flex-col justify-between bg-[#F1F3FF] p-12"
+                  >
+                    <div class="grid ld:grid-cols-2">
+                      <div class="text-white items-center">
+                        <img src="./images/photo1.png" />
+                      </div>
+                      <div class="mt-4">
+                        <img src="./images/star.png" />
+                        <p class="mt-4 text-lg text-gray-600">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ipsam cumque recusandae dolorum porro, quasi
+                          sunt necessitatibus dolorem ab laudantium vel.
+                        </p>
+                      </div>
+                    </div>
+                    <footer class="mt-8 text-gray-500">
+                      John Dee 32, Bromo
+                    </footer>
+                  </blockquote>
+                </div>
+
+                <div class="swiper-slide">
+                  <blockquote
+                    class="flex h-full flex-col justify-between bg-[#F1F3FF] p-12"
+                  >
+                    <div class="grid ld:grid-cols-2">
+                      <div class="text-white items-center">
+                        <img src="./images/photo1.png" />
+                      </div>
+                      <div class="mt-4">
+                        <img src="./images/star.png" />
+                        <p class="mt-4 text-lg text-gray-600">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ipsam cumque recusandae dolorum porro, quasi
+                          sunt necessitatibus dolorem ab laudantium vel.
+                        </p>
+                      </div>
+                    </div>
+                    <footer class="mt-8 text-gray-500">
+                      John Dee 32, Bromo
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
             </div>
-            <div class="mb-6 flex justify-center">
-              <img src="./images/star.png" />
-            </div>
-            <p class="mb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-              debitis dolore fugit voluptatibus iusto aspernatur veniam esse odit
-              ea aperiam iure eligendi reiciendis accusantium sit illum officia
-              pariatur vel beatae.
-            </p>
-            <p class="font-semibold">John Dee 32, Bromo</p>
           </div>
 
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <div class="mb-6 flex justify-center">
-                <img src="./images/photo1.png">
-              </div>
-              <div class="mb-6 flex justify-center">
-                <img src="./images/star.png" />
-              </div>
-              <p class="mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                debitis dolore fugit voluptatibus iusto aspernatur veniam esse odit
-                ea aperiam iure eligendi reiciendis accusantium sit illum officia
-                pariatur vel beatae.
-              </p>
-              <p class="font-semibold">John Dee 32, Bromo</p>
-            </div>
-            
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <div class="mb-6 flex justify-center">
-                <img src="./images/photo2.png">
-              </div>
-              <div class="mb-6 flex justify-center">
-                <img src="./images/star.png" />
-              </div>
-              <p class="mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                debitis dolore fugit voluptatibus iusto aspernatur veniam esse odit
-                ea aperiam iure eligendi reiciendis accusantium sit illum officia
-                pariatur vel beatae.
-              </p>
-              <p class="font-semibold">John Dee 32, Bromo</p>
-            </div>
-        </div>
-
-        <div
-          class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2"
-        >
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 1"
-            data-carousel-slide-to="0"
-          ></button>
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 2"
-            data-carousel-slide-to="1"
-          ></button>
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 3"
-            data-carousel-slide-to="2"
-          ></button>
-        </div>
-
-        <button
-          type="button"
-          class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
-          data-carousel-prev
-        >
-          <span
-            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 group-focus:ring-4 group-focus:ring-white group-focus:outline-none"
+          <div
+            class="mt-8 gap-4 lg:mt-6 items-center justify-center sm:flex sm:pr-6"
           >
-            <svg
-              class="w-5 h-5 text-white sm:w-6 sm:h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              class="prev-button rounded-full border border-current p-3 text-pink-600 transition-colors focus:bg-pink-600 focus:text-white focus:outline-none"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 19l-7-7 7-7"
-              ></path>
-            </svg>
-            <span class="hidden">Anterior</span>
-          </span>
-        </button>
-        <button
-          type="button"
-          class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
-          data-carousel-next
-        >
-          <span
-            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white group-focus:outline-none"
-          >
-            <svg
-              class="w-5 h-5 text-white sm:w-6 sm:h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              ></path>
-            </svg>
-            <span class="hidden">Siguiente</span>
-          </span>
-        </button>
-      </div>
-      <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
-    </div>
+              <span class="sr-only">Previous Slide</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 -rotate-180"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
 
-    <!--- ================================== SEWA ========================================= -->
-    <!-- component -->
-    <!-- This is an example component -->
-    <section class="p-12">
-      <div
-        class="container grid mx-auto justify-center text-center bg-blue-800 py-6 rounded-lg"
-      >
-        <h1 class="font-bold text-2xl text-white px-20 pt-8">
-          Sewa Mobil di (Lokasimu) Sekarang
-        </h1>
-        <p class="text-white px-14 pt-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          cupiditate recusandae provident blanditiis, consequatur nisi optio
-          expedita molestiae perspiciatis dolore non quam error saepe
-          reprehenderit doloribus itaque sapiente cum omnis.
-        </p>
-        <div class="py-10">
-          <button
-            class="py-3 bg-green-400 rounded-sm px-5 font-bold text-white"
-          >
-            Mulai Sewa Mobil
-          </button>
+            <button
+              class="next-button rounded-full border border-current p-3 text-pink-600 focus:bg-pink-600 focus:text-white focus:outline-none"
+            >
+              <span class="sr-only">Next Slide</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const swiper = new Swiper(".swiper-container", {
+          loop: true,
+          slidesPerView: 1,
+          spaceBetween: 32,
+          autoplay: {
+            delay: 8000,
+          },
+          navigation: {
+            nextEl: ".next-button",
+            prevEl: ".prev-button",
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 1.5,
+              centeredSlides: true,
+            },
+            1024: {
+              centeredSlides: false,
+              slidesPerView: 2.25,
+            },
+          },
+        });
+      });
+    </script>
 
     <!--- ================================== FAQ [accordions] ========================================= -->
     <section class="p-7">
