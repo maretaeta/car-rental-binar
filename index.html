@@ -26,7 +26,7 @@
     <section class="bg-[#F1F3FF]">
       <nav class="fixed top-0 left-0 w-full bg-[#F1F3FF] z-10">
         <div
-          class="container m-auto flex justify-between items-center mt-5 w-full"
+          class="flex justify-between items-center py-4 md:mx-24 cursor-pointer"
         >
           <a href="index.html">
             <h4 class="px-4 text-xl font-bold">Binar Car Rental</h4>
@@ -56,15 +56,20 @@
           <button
             class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none group"
           >
-            <i class="uil uil-bars"></i>
-            <div class="w-5 h-1 mb-1"></div>
-            <div class="w-5 h-1 mb-1"></div>
-            <div class="w-5 h-1"></div>
+            <i class="uil uil-bars inline-block scale-150"></i>
+
             <div
               class="absolute top-0 opacity-0 h-screen w-6/12 bg-white border transform group-focus:right-0 group-focus:opacity-100 transition-all duration-300"
             >
+              <div
+                class="grid grid-cols-2 w-full text-base cursor-pointer pt-10 pl-10"
+              >
+                <p class="flex font-semibold">BCR</p>
+                <i class="uil uil-multiply block"></i>
+              </div>
+
               <ul
-                class="flex flex-col items-center w-full text-base cursor-pointer pt-10"
+                class="flex flex-col items-center w-full text-base cursor-pointer pt-5"
               >
                 <li class="hover:text-blue-600 py-4 px-6 w-full">
                   <a href="#"> Our Service </a>
@@ -90,13 +95,12 @@
       </nav>
 
       <!--- ================================== HEADER ========================================= -->
-      <!--flex (pembungkus elemen dalam section) : mudah mengatur posisi didlmnya (flex-wrap : tidak harus sejajar dengan satu baris)-->
-      <!--- id : digunakan agar terpanggil jika diarahkan ke navigasi-->
-      <section id="" class="pt-20 md:pl-20 gap-32 md:grid grid-cols-2 mx-auto">
+
+      <section class="pt-20 md:pl-20 gap-32 md:grid grid-cols-2 mx-auto">
         <div class="px-4">
           <div class="m-auto w-full md:pl-4">
             <!--text base : ukuran normal-->
-            <h1 class="text-3xl font-bold pt-12 flex">
+            <h1 class="text-3xl font-bold pt-10 flex">
               Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
             </h1>
             <div>
@@ -221,32 +225,6 @@
       </div>
     </section>
 
-    <!--- ================================== SEWA ========================================= -->
-    <!-- component -->
-    <!-- This is an example component -->
-    <section class="p-12">
-      <div
-        class="container grid mx-auto justify-center text-center bg-blue-800 py-6 rounded-lg"
-      >
-        <h1 class="font-bold text-2xl text-white px-20 pt-8">
-          Sewa Mobil di (Lokasimu) Sekarang
-        </h1>
-        <p class="text-white px-14 pt-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          cupiditate recusandae provident blanditiis, consequatur nisi optio
-          expedita molestiae perspiciatis dolore non quam error saepe
-          reprehenderit doloribus itaque sapiente cum omnis.
-        </p>
-        <div class="py-10">
-          <button
-            class="py-3 bg-green-400 rounded-sm px-5 font-bold text-white"
-          >
-            Mulai Sewa Mobil
-          </button>
-        </div>
-      </div>
-    </section>
-
     <!--- ================================== TESTIMONIALS ========================================= -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link
@@ -255,30 +233,32 @@
     />
 
     <section>
-      <div class="mx-auto">
+      <div class="mx-auto pt-10">
         <!--Text-->
         <div class="mx-auto text-center">
-          <h2 class="mb-4 text-3xl font-bold">Testimonial</h2>
-          <p class="mb-4 pb-2 md:mb-12 md:pb-0">
+          <h2 class="mb-2 text-2xl font-bold">Testimonial</h2>
+          <p class="md:mb-10 text-base">
             Berbagai review positif dari para pelanggan kami
           </p>
         </div>
 
         <!--Slider-->
-        <div class="mx-6 mt-8 lg:col-span-2 lg:mx-0">
+        <div class="mx-6 mt-6 lg:col-span-2 lg:mx-0">
           <div class="swiper-container !overflow-hidden">
             <div class="swiper-wrapper">
+              <!--Slide 1-->
               <div class="swiper-slide">
                 <blockquote
-                  class="h-full flex-col justify-center bg-[#F1F3FF] p-12 rounded-md"
+                  class="flex h-full flex-col justify-center bg-[#F1F3FF] p-10 rounded-md text-justify items-start"
                 >
-                  <!--Slide 1-->
-                  <div class="grid lg:grid-cols-2 md:grid-cols-2">
-                    <div class="text-white">
+                  <div
+                    class="justify-items-center grid lg:flex lg:gap-20 ld:grid-cols-2 md:grid-cols-2"
+                  >
+                    <div class="self-center lg:scale-[2.5] pl-4">
                       <img src="./images/photo2.png" />
                     </div>
                     <div class="mt-4">
-                      <img src="./images/star.png" class="" />
+                      <img src="./images/star.png" class="self-center" />
                       <p class="mt-4 text-lg text-gray-600">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Ipsam cumque recusandae dolorum porro, quasi sunt
@@ -295,14 +275,16 @@
               <!--Slide 2-->
               <div class="swiper-slide">
                 <blockquote
-                  class="flex h-full flex-col justify-between bg-[#F1F3FF] p-12"
+                  class="flex h-full flex-col justify-center bg-[#F1F3FF] p-10 rounded-md text-justify items-start"
                 >
-                  <div class="grid lg:grid-cols-2 md:grid-cols-2">
-                    <div class="text-white items-center">
+                  <div
+                    class="justify-items-center grid lg:flex lg:gap-20 ld:grid-cols-2 md:grid-cols-2"
+                  >
+                    <div class="self-center lg:scale-[2.5] pl-4">
                       <img src="./images/photo1.png" />
                     </div>
                     <div class="mt-4">
-                      <img src="./images/star.png" class="" />
+                      <img src="./images/star.png" class="self-center" />
                       <p class="mt-4 text-lg text-gray-600">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Ipsam cumque recusandae dolorum porro, quasi sunt
@@ -319,14 +301,16 @@
               <!--Slide 3-->
               <div class="swiper-slide">
                 <blockquote
-                  class="flex h-full flex-col justify-between bg-[#F1F3FF] p-12"
+                  class="flex h-full flex-col justify-center bg-[#F1F3FF] p-10 rounded-md text-justify items-start"
                 >
-                  <div class="grid lg:grid-cols-2 md:grid-cols-2">
-                    <div class="text-white items-center">
-                      <img src="./images/photo1.png" />
+                  <div
+                    class="justify-items-center grid lg:flex lg:gap-20 ld:grid-cols-2 md:grid-cols-2"
+                  >
+                    <div class="self-center lg:scale-[2.5] pl-4">
+                      <img src="./images/photo2.png" />
                     </div>
                     <div class="mt-4">
-                      <img src="./images/star.png" />
+                      <img src="./images/star.png" class="self-center" />
                       <p class="mt-4 text-lg text-gray-600">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Ipsam cumque recusandae dolorum porro, quasi sunt
@@ -420,12 +404,38 @@
       });
     </script>
 
+    <!--- ================================== SEWA ========================================= -->
+    <!-- component -->
+    <!-- This is an example component -->
+    <section class="p-12">
+      <div
+        class="container grid mx-auto justify-center text-center bg-blue-800 py-6 rounded-lg"
+      >
+        <h1 class="font-bold text-2xl text-white px-20 pt-8">
+          Sewa Mobil di (Lokasimu) Sekarang
+        </h1>
+        <p class="text-white px-14 pt-10">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+          cupiditate recusandae provident blanditiis, consequatur nisi optio
+          expedita molestiae perspiciatis dolore non quam error saepe
+          reprehenderit doloribus itaque sapiente cum omnis.
+        </p>
+        <div class="py-10">
+          <button
+            class="py-3 bg-green-400 rounded-sm px-5 font-bold text-white"
+          >
+            Mulai Sewa Mobil
+          </button>
+        </div>
+      </div>
+    </section>
+
     <!--- ================================== FAQ [accordions] ========================================= -->
     <section class="p-7">
       <div
         class="container max-w-7xl mx-auto grid md:grid-cols-2 w-full justify-items-center"
       >
-        <div class="pt-16 items-center">
+        <div class="pt-12 items-center">
           <p class="font-bold text-2xl pl-5">Frequently Asked Question</p>
           <p class="pt-3 pb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing
