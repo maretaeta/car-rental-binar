@@ -66,22 +66,21 @@
             </li>
           </ul>
 
+          <!-- klik open -->
           <span
-            class="absolute text-white text-4xl top-3 right-4 cursor-pointer"
+            class="fixed text-white text-4xl top-3 right-4 cursor-pointer"
             onclick="Openbar()"
           >
             <i
-              class="uil uil-bars px-2 text-black rounded-md lg:hidden md:hidden w-full md:w-auto"
+              class="uil uil-bars px-2 text-black rounded-md lg:hidden md:hidden"
             ></i>
           </span>
           <div
-            class="sidebar fixed top-0 lg:hidden bottom-0 lg:right-0 duration-1000 p-2 w-[300px] overflow-y-auto text-center bg-white shadow h-screen right-0 md:hidden"
+            class="sidebar fixed top-0 bottom-0 lg:hidden lg:right-0 duration-1000 p-2 w-8/12 overflow-y-auto text-center bg-white shadow h-screen md:hidden right-[-300px] sm:hidden"
           >
             <div class="text-gray-100 text-xl">
               <div class="p-2.5 mt-1 flex items-center rounded-md">
-                <i
-                  class="bi bi-app-indicator px-2 py-1 bg-blue-600 rounded-md"
-                ></i>
+                <i class="px-2 py-1 bg-blue-600 rounded-md"></i>
                 <h1 class="text-[15px] ml-3 text-xl text-black font-bold">
                   BCR
                 </h1>
@@ -115,11 +114,11 @@
                 </div>
 
                 <div
-                  class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600"
+                  class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer"
                 >
                   <a
                     href="#"
-                    class="bg-[#5CB85F] font-semibold text-white py-2 px-3 hover:shadow-lg hover:opacity-80"
+                    class="bg-[#5CB85F] text-white py-2 px-3 hover:shadow-lg hover:opacity-80"
                     >Registrasi</a
                   >
                 </div>
@@ -130,7 +129,7 @@
       </nav>
       <script>
         function Openbar() {
-          document.querySelector(".sidebar").classList.toggle("right-[-300px]");
+          document.querySelector(".sidebar").classList.toggle("right-0");
         }
       </script>
 
