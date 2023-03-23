@@ -33,80 +33,112 @@
     <section class="bg-[#F1F3FF]">
       <nav class="fixed top-0 left-0 w-full bg-[#F1F3FF] z-10">
         <div
-          class="flex justify-between items-center py-4 md:mx-24 cursor-pointer"
+          class="flex justify-between items-center py-4 md:mx-11 cursor-pointer"
         >
           <a href="index.html">
-            <h4 class="px-4 text-xl font-bold">Binar Car Rental</h4>
+            <h4
+              class="px-5 md:px-2 text-xl font-bold md:w-44 md:pl-2 lg:text-2xl lg:w-72"
+            >
+              Binar Car Rental
+            </h4>
           </a>
           <ul
             class="hidden md:flex items-center text-base cursor-pointer font-semibold"
           >
-            <li class="hover:text-blue-600 py-4 px-6">
-              <a href="#"> Our Service </a>
+            <li class="hover:text-blue-600 py-4 px-6 md:px-2 md:w-28">
+              <a href="#ourService"> Our Service </a>
             </li>
-            <li class="hover:text-blue-600 py-4 px-6">
-              <a href="#"> Why Us </a>
+            <li class="hover:text-blue-600 py-4 px-6 md:px-2 md:w-20">
+              <a href="#whyUs"> Why Us </a>
             </li>
-            <li class="hover:text-blue-600 py-4 px-6">
-              <a href="#"> Testimonial </a>
+            <li class="hover:text-blue-600 py-4 px-6 md:px-2">
+              <a href="#testimonials"> Testimonial </a>
             </li>
-            <li class="hover:text-blue-600 py-4 px-6">
-              <a href="#"> Contact </a>
+            <li class="hover:text-blue-600 py-4 px-6 md:px-2">
+              <a href="#contact"> Contact </a>
             </li>
-            <a
-              href="#"
-              class="bg-[#5CB85F] font-semibold text-white py-2 px-3 hover:shadow-lg hover:opacity-80"
-              >Registrasi</a
-            >
+            <li class="py-4 px-6 md:px-2">
+              <a
+                href="#"
+                class="bg-[#5CB85F] font-semibold text-white py-2 px-3 hover:shadow-lg hover:opacity-80"
+                >Registrasi</a
+              >
+            </li>
           </ul>
 
-          <button
-            class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none group"
+          <span
+            class="absolute text-white text-4xl top-3 right-4 cursor-pointer"
+            onclick="Openbar()"
           >
-            <i class="uil uil-bars inline-block scale-150"></i>
-
-            <div
-              class="absolute top-0 opacity-0 h-screen w-6/12 bg-white border transform group-focus:right-0 group-focus:opacity-100 transition-all duration-300"
-            >
-              <div
-                class="grid grid-cols-2 w-full text-base cursor-pointer pt-10 pl-10"
-              >
-                <p class="flex font-semibold">BCR</p>
-                <i class="uil uil-multiply block"></i>
+            <i
+              class="uil uil-bars px-2 text-black rounded-md lg:hidden md:hidden w-full md:w-auto"
+            ></i>
+          </span>
+          <div
+            class="sidebar fixed top-0 lg:hidden bottom-0 lg:right-0 duration-1000 p-2 w-[300px] overflow-y-auto text-center bg-white shadow h-screen right-0 md:hidden"
+          >
+            <div class="text-gray-100 text-xl">
+              <div class="p-2.5 mt-1 flex items-center rounded-md">
+                <i
+                  class="bi bi-app-indicator px-2 py-1 bg-blue-600 rounded-md"
+                ></i>
+                <h1 class="text-[15px] ml-3 text-xl text-black font-bold">
+                  BCR
+                </h1>
+                <i
+                  class="uil uil-multiply ml-20 cursor-pointer lg:hidden text-black w-36 scale-110"
+                  onclick="Openbar()"
+                ></i>
               </div>
+              <hr class="my-2 text-black" />
 
-              <ul
-                class="flex flex-col items-center w-full text-base cursor-pointer pt-5"
-              >
-                <li class="hover:text-blue-600 py-4 px-6 w-full">
-                  <a href="#"> Our Service </a>
-                </li>
-                <li class="hover:text-blue-600 py-4 px-6 w-full">
-                  <a href="#"> Why Us </a>
-                </li>
-                <li class="hover:text-blue-600 py-4 px-6 w-full">
-                  <a href="#"> Testimonial </a>
-                </li>
-                <li class="hover:text-blue-600 py-4 px-6 w-full">
-                  <a href="#"> Contact </a>
-                </li>
-                <a
-                  href="#"
-                  class="bg-[#5CB85F] font-semibold text-white py-2 px-2 hover:shadow-lg hover:opacity-80"
-                  >Registrasi</a
+              <div>
+                <div
+                  class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600"
                 >
-              </ul>
+                  <span class="text-[15px] ml-4 text-black"> Service</span>
+                </div>
+                <div
+                  class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600"
+                >
+                  <span class="text-[15px] ml-4 text-black">Why Us</span>
+                </div>
+                <div
+                  class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600"
+                >
+                  <span class="text-[15px] ml-4 text-black">Testimonials</span>
+                </div>
+                <div
+                  class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600"
+                >
+                  <span class="text-[15px] ml-4 text-black">Contact</span>
+                </div>
+
+                <div
+                  class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600"
+                >
+                  <a
+                    href="#"
+                    class="bg-[#5CB85F] font-semibold text-white py-2 px-3 hover:shadow-lg hover:opacity-80"
+                    >Registrasi</a
+                  >
+                </div>
+              </div>
             </div>
-          </button>
+          </div>
         </div>
       </nav>
+      <script>
+        function Openbar() {
+          document.querySelector(".sidebar").classList.toggle("right-[-300px]");
+        }
+      </script>
 
       <!--- ================================== HEADER ========================================= -->
 
-      <section class="pt-20 md:pl-20 gap-32 md:grid grid-cols-2 mx-auto">
-        <div class="px-4">
-          <div class="m-auto w-full md:pl-4">
-            <!--text base : ukuran normal-->
+      <section class="pt-20 md:pl-9 gap-32 md:grid grid-cols-2 mx-auto">
+        <div class="px-4 md:pt-5">
+          <div class="m-auto w-full md:pt-3">
             <h1 class="text-3xl font-bold pt-12 flex">
               Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
             </h1>
@@ -132,8 +164,8 @@
       </section>
     </section>
 
-    <!--- ================================== CEKLIS ========================================= -->
-    <section class="pt-12">
+    <!--- ================================== OUR SERVICE ========================================= -->
+    <section id="ourService" class="pt-12 md:mx-2">
       <div
         class="container max-w-6xl mx-auto grid md:grid-cols-2 w-full justify-items-center"
       >
@@ -179,7 +211,7 @@
     </section>
 
     <!--- ================================== WHY US ========================================= -->
-    <section class="py-16">
+    <section id="whyUs" class="py-16 md:mx-5 lg:pt-32">
       <h1 class="font-bold text-2xl pb-2 text-center lg:text-start lg:pl-40">
         Why Us ?
       </h1>
@@ -239,7 +271,7 @@
       rel="stylesheet"
     />
 
-    <section>
+    <section id="testimonials">
       <div class="mx-auto pt-10">
         <!--Text-->
         <div class="mx-auto text-center">
@@ -438,13 +470,13 @@
     </section>
 
     <!--- ================================== FAQ [accordions] ========================================= -->
-    <section class="p-7">
+    <section id="faq" class="p-7">
       <div
         class="container max-w-7xl mx-auto grid md:grid-cols-2 w-full justify-items-center"
       >
         <div class="pt-12 items-center">
           <p class="font-bold text-2xl pl-5">Frequently Asked Question</p>
-          <p class="pt-3 pb-4">
+          <p class="md:text-center md:pt-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing
           </p>
         </div>
@@ -493,7 +525,9 @@
                 class="absolute peer opacity-0"
               />
               <!--Heading-->
-              <label for="input2" class="text-sm mx-7 h-14 flex items-center"
+              <label
+                for="input2"
+                class="text-sm mx-7 mr-9 md:mr-10 h-14 flex items-center"
                 >Berapa hari minimal sewa mobil lepas kunci?</label
               >
               <!--Arrow-->
@@ -611,9 +645,9 @@
     </section>
 
     <!--- ================================== FOOTER ========================================= -->
-    <footer class="mt-10 mb-7">
+    <footer id="contact" class="mt-10 bg-[#F1F3FF]">
       <div
-        class="pl-8 md:pl-16 w-full max-w-7xl mx-auto md:grid-cols-4 grid gap-3 text-base"
+        class="pl-6 md:pl-12 w-full max-w-7xl mx-auto md:grid-cols-4 grid gap-3 text-base pt-10"
       >
         <div class="pt-2">
           <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
@@ -621,7 +655,7 @@
           <p>081-233-334-808</p>
         </div>
 
-        <div class="block mx-auto w-full font-semibold md:pl-16">
+        <div class="block mx-auto w-full font-semibold md:pl-10">
           <ul class="">
             <li class="pt-2"><a href="#"> Our Service </a></li>
             <li class="pt-2"><a href="#"> Why Us</a></li>
@@ -630,7 +664,7 @@
           </ul>
         </div>
 
-        <div class="">
+        <div class="pt-2">
           <h4>Connect with us</h4>
           <div class="flex row-span-4 gap-3 pt-4">
             <a href="#"><img src="./images/facebook.png" /> </a>
@@ -642,7 +676,7 @@
         <div class="pt-2">
           <p>Copyright Binar 2022</p>
         </div>
-        <div class="pt-4">
+        <div class="pt-4 pb-7">
           <h4 class="text-xl font-bold">Binar Car Rental</h4>
         </div>
       </div>
