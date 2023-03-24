@@ -31,7 +31,7 @@
   <body class="font-['Helvetica']">
     <!--- ================================== NAVBAR ========================================= -->
     <section class="bg-[#F1F3FF]">
-      <nav class="fixed top-0 left-0 w-full bg-[#F1F3FF] z-10">
+      <nav class="fixed top-0 left-0 w-full bg-[#F1F3FF] z-10 shadow-md">
         <div
           class="flex justify-between items-center py-4 md:mx-11 cursor-pointer"
         >
@@ -85,7 +85,7 @@
                   BCR
                 </h1>
                 <i
-                  class="uil uil-multiply ml-20 cursor-pointer lg:hidden text-black w-36 scale-110"
+                  class="uil uil-multiply ml-20 cursor-pointer lg:hidden text-black w-36 scale-110 hover:text-green-600 sm:cursor-pointer"
                   onclick="Openbar()"
                 ></i>
               </div>
@@ -95,22 +95,30 @@
                 <div
                   class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600"
                 >
-                  <span class="text-[15px] ml-4 text-black"> Service</span>
+                  <span class="text-[15px] ml-4 text-black">
+                    <a href="#ourService">Service </a></span
+                  >
                 </div>
                 <div
                   class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600"
                 >
-                  <span class="text-[15px] ml-4 text-black">Why Us</span>
+                  <span class="text-[15px] ml-4 text-black"
+                    ><a href="#whyUs"> Why Us </a></span
+                  >
                 </div>
                 <div
                   class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600"
                 >
-                  <span class="text-[15px] ml-4 text-black">Testimonials</span>
+                  <span class="text-[15px] ml-4 text-black">
+                    <a href="#testimonials"> Testimonial </a></span
+                  >
                 </div>
                 <div
                   class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600"
                 >
-                  <span class="text-[15px] ml-4 text-black">Contact</span>
+                  <span class="text-[15px] ml-4 text-black"
+                    ><a href="#contact"> Contact </a></span
+                  >
                 </div>
 
                 <div
@@ -127,15 +135,12 @@
           </div>
         </div>
       </nav>
-      <script>
-        function Openbar() {
-          document.querySelector(".sidebar").classList.toggle("right-0");
-        }
-      </script>
 
       <!--- ================================== HEADER ========================================= -->
 
-      <section class="pt-20 md:pl-9 gap-32 md:grid grid-cols-2 mx-auto">
+      <section
+        class="pt-16 md:pt-20 md:pl-9 gap-32 md:grid grid-cols-2 mx-auto"
+      >
         <div class="px-4 md:pt-5">
           <div class="m-auto w-full md:pt-3">
             <h1 class="text-3xl font-bold pt-12 flex">
@@ -473,9 +478,9 @@
       <div
         class="container max-w-7xl mx-auto grid md:grid-cols-2 w-full justify-items-center"
       >
-        <div class="pt-12 items-center">
-          <p class="font-bold text-2xl pl-5">Frequently Asked Question</p>
-          <p class="md:text-center md:pt-2">
+        <div class="pt-12 text-center">
+          <p class="font-bold text-2xl">Frequently Asked Question</p>
+          <p class="md:text-center md:pt-2 pb-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing
           </p>
         </div>
@@ -682,6 +687,11 @@
     </footer>
 
     <!--SCRIPT NAVBAR-->
+    <script>
+      function Openbar() {
+        document.querySelector(".sidebar").classList.toggle("right-0");
+      }
+    </script>
     <script>
       const navLinks = document.querySelector(".nav-links");
       function onToggleMenu(e) {
